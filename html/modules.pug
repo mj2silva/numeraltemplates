@@ -1,0 +1,15 @@
+extend components/plantilla.pug
+block header
+	include components/intranet-header.pug
+block contents
+	section.select-module
+		h1.select-module__tittle #{title}
+		p.select-module__instructions #{instructions}
+		.select-module__options
+			- for (var i = 0; i < selectModuleOptions.length; i++)
+				+selectModuleButton(optionIcons[i], selectModuleOptions[i], selectModuleOptions[i], optionLinks[i])
+block footer
+	footer.footer-logo
+		.footer-logo__logo
+			img(src="../images/numeral1.png" alt="Numeral logo 1")
+

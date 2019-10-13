@@ -1,0 +1,12 @@
+-var title = "Bienvenido al sistema de administración del GEN"
+-var instructions = "Por favor, selecciona un módulo para comenzar"
+-var headerMenuOptions = ["Faqs", "Reportar un problema", "Cerrar sesión"]
+-var selectModuleOptions = ["Atención al cliente", "Administrador", "Recursos humanos"]
+-var optionIcons = ["support-icon.png", "admin-icon.png", "hr-icon.png"]
+-var optionLinks = ["customer-support.html", "#", "#"]
+
+mixin selectModuleButton(iconLink, altText, optionName, optionLink)
+    .select-module__option
+        a(href=""+optionLink).select-module__button 
+            img.select-module__button-logo(src="../images/icons/"+iconLink alt=""+altText)
+            | #{optionName}

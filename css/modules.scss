@@ -58,6 +58,7 @@ body {
     padding: 20px;
     font-size: 20px;
     border-radius: 50px;
+    margin: 10px;
 }
 
 .select-module__option img {
@@ -85,4 +86,11 @@ body {
 
 .footer-logo__logo img {
     width: 12em;
+}
+
+@media only screen and (max-width: 900px) {
+    .select-module__options {
+        justify-content: center;
+        margin: 0;
+    }
 }

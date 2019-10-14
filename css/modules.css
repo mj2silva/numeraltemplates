@@ -28,7 +28,7 @@ body {
 
 .select-module {
   width: 80%;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

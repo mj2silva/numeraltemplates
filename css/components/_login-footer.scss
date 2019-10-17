@@ -1,0 +1,10 @@
+.login-footer {
+    @extend .login-header;
+    justify-content: flex-start;
+    &__menu {
+        @extend .login-header__menu;
+    }
+    &__menu a {
+        @extend .login-header__enlace;
+    }
+}

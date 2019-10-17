@@ -1,0 +1,23 @@
+.header-intranet {
+    background-color: $cl-gray-1;
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 30px;
+    }
+    &__option {
+        color: $cl-white;
+        text-decoration: none;
+        margin-right: 30px;
+    }
+    &__option:hover {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-intranet__menu {
+        font-size: 12px;
+    }
+}

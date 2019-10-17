@@ -1,0 +1,19 @@
+.login-header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    &__menu {
+        font-size: 16px;
+        display: flex;
+    }
+    &__enlace {
+        color: $cl-gray-1;
+        text-decoration: none;
+        display: block;
+        margin: auto 10px;
+    }
+    &__enlace:hover {
+        text-decoration: underline;
+        color: #9b9b9b;
+    }
+}

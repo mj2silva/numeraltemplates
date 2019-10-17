@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0; }
+
+.login-header, .login-footer {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .login-header__menu, .login-footer__menu {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .login-header__enlace, .login-footer__menu a {
+    color: #646464;
+    text-decoration: none;
+    display: block;
+    margin: auto 10px; }
+  .login-header__enlace:hover, .login-footer__menu a:hover {
+    text-decoration: underline;
+    color: #9b9b9b; }
+
+.login {
+  min-height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.login-container {
+  min-height: calc(100vh - 400px);
+  width: 50%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 60px;
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(109, 109, 109, 0.5);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(109, 109, 109, 0.5);
+  box-shadow: 0px 3px 15px 0px rgba(109, 109, 109, 0.5); }
+  .login-container__content {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .login-container__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 40px 0;
+    width: 80%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .login-container__form label {
+    -ms-flex-item-align: start;
+    align-self: flex-start; }
+  .login-container__tittle {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0; }
+  .login-container__text {
+    font-size: 20px;
+    margin: 48px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .login-container__input {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid #444444 1px;
+    padding: 5px 10px;
+    margin: 15px 0; }
+  .login-container__input:focus {
+    outline-color: transparent;
+    border-color: #92DCE5; }
+  .login-container__button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-radius: 15px;
+    border: none;
+    background-color: #ED3237;
+    color: #F8F8F8;
+    font-size: 16px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center; }
+  .login-container__button:hover {
+    background: #ff7176; }
+  .login-container__logo {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .login-container__logo img {
+    width: 60%;
+    margin: 0; }
+
+@media only screen and (max-width: 650px) {
+  .login-container {
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .login-container__content {
+      -ms-grid-column-span: 3;
+      grid-column-end: 3;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .login-container__form {
+      width: 100%; }
+    .login-container__logo {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-column: 1 / 3;
+      width: 100%;
+      margin: 10px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .login-container__input {
+      width: 100%; }
+    .login-container__tittle {
+      font-size: 24px;
+      text-align: center; } }
+
+.login-footer {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }

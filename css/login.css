@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0; }
+  margin: 0;
+  background-color: #F8F8F8; }
 
 .login-header, .login-footer {
   height: 50px;
@@ -24,12 +25,6 @@ body {
   .login-header__enlace:hover, .login-footer__menu a:hover {
     text-decoration: underline;
     color: #9b9b9b; }
-
-.login {
-  min-height: calc(100vh - 100px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 .login-container {
   min-height: calc(100vh - 400px);
@@ -162,3 +157,6 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
+
+main {
+  min-height: calc(100vh - 100px); }

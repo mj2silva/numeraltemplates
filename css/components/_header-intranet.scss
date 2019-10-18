@@ -1,10 +1,12 @@
+$headerHeight: 30px;
 .header-intranet {
+    width: 100%;
     background-color: $cl-gray-1;
     &__menu {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        height: 30px;
+        height: $headerHeight;
     }
     &__option {
         color: $cl-white;

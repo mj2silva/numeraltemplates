@@ -2,3 +2,11 @@
 @import "components/header-intranet";
 @import "components/select-module";
 @import "components/footer-logo";
+// $sideBarWidth: 0px;
+// body {
+//     grid-template-columns: $sideBarWidth auto;
+// }
+.container {
+    min-height: getMainContainerHeight($headerHeight, $footerHeight);
+    width: 100%;
+}

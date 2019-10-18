@@ -4,9 +4,17 @@
 -var selectModuleOptions = ["Atención al cliente", "Administrador", "Recursos humanos"]
 -var optionIcons = ["support-icon.png", "admin-icon.png", "hr-icon.png"]
 -var optionLinks = ["customer-support.html", "#", "#"]
+-var sideOptionsIcons = ["fas fa-home", "fas fa-shapes", "fas fa-user-graduate"]
+-var sideOptionsNames = ["Inicio", "Servicios", "Estudiantes"]
 
 mixin selectModuleButton(iconLink, altText, optionName, optionLink)
     .select-module__option
         a(href=""+optionLink).select-module__button 
             img.select-module__button-logo(src="../images/icons/"+iconLink alt=""+altText)
+            | #{optionName}
+
+mixin sideOption(iconClass, altText, optionName)
+    .side-bar__option
+        i.side-bar__icon(class=""+iconClass)
+        p.side-bar__option-name
             | #{optionName}

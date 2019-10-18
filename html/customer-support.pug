@@ -1,5 +1,18 @@
-extend components/plantilla.pug
+extend components/_plantilla.pug
+block side-bar
+	.side-bar
+		.side-bar__menu-button
+			i.fas.fa-bars
+		nav.side-bar__options
+			- for (var i = 0; i < selectModuleOptions.length; i++)
+				+sideOption(sideOptionsIcons[i], sideOptionsNames[i], sideOptionsNames[i])
+		.side-bar__footer
+			.side-bar__profile-picture
+				img(src="../images/icons/user-icon.png", alt="profile-icon")
+			.side-bar__profile-data
+				p Username
+				p Cargo en la compañía
 block header
-	include components/intranet-header.pug
+	include components/_intranet-header.pug
 block contents
 block footer

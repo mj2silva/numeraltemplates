@@ -1,0 +1,76 @@
+@import "components/globals";
+@import "components/header-intranet";
+@import "components/select-module";
+@import "components/footer-logo";
+// $sideBarWidth: 0px;
+// body {
+//     grid-template-columns: $sideBarWidth auto;
+// }
+.container {
+    min-height: getMainContainerHeight($headerHeight, $footerHeight);
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.side-bar {
+    width: 40%;
+    background-color: $cl-primary-1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__menu-button {
+        font-size: 48px;
+        color: white;
+        margin: 24px 48px 0 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__footer {
+        display: flex;
+        font-size: 12px;
+        color: white;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__profile-picture {
+        width: 140px;
+        text-align: center;
+    }
+    &__profile-data {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        justify-content: center;
+    }
+    &__profile-data p {
+        margin: 4px 0;
+    }
+    &__icon {
+        font-size: 48px;
+        color: white;
+    }
+    &__option {
+        display: flex;
+        margin-bottom: 24px;
+        align-items: center;
+        color: white;
+    }
+    &__option:hover,
+    &__option:hover &__icon,
+    &__menu-button:hover {
+        color: $cl-secondary-1;
+        cursor: pointer;
+    }
+    &__option i {
+        width: 140px;
+        text-align: center;
+    }
+    &__option-name {
+        font-size: 28px;
+    }
+}

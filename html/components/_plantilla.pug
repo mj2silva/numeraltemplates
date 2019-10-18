@@ -1,9 +1,11 @@
-include configuration.pug
+include _configuration.pug
 
 doctype html
 html(lang="es")
-    include head.pug
+    include _head.pug
 body
-    block header
-    block contents
-    block footer
+    block side-bar
+    .container
+            block header
+            block contents
+            block footer

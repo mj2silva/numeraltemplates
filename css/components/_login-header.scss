@@ -1,5 +1,6 @@
+$headerHeight: 50px;
 .login-header {
-    height: 50px;
+    height: $headerHeight;
     display: flex;
     justify-content: flex-end;
     &__menu {

@@ -2,3 +2,6 @@
 @import "components/login-header";
 @import "components/login";
 @import "components/login-footer";
+main {
+    min-height: getMainContainerHeight($headerHeight, $footerHeight);
+}

@@ -12,7 +12,16 @@ $cl-white: #F8F8F8;
 $cl-black: #444444;
 $cl-gray-1: #646464;
 $cl-gray-2: #EEEEEE;
+@function getMainContainerHeight($headerHeight,
+$footerHeight) {
+    $occupedHeight: $headerHeight + $footerHeight;
+    @return calc(100vh - #{$occupedHeight});
+}
+
 body {
     font-family: $font-1;
     margin: 0;
+    background-color: $cl-white;
+    display: flex;
+    flex-direction: row;
 }

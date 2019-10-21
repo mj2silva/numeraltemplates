@@ -2,7 +2,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background-color: #F8F8F8; }
+  background-color: #F8F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .login-header, .login-footer {
   height: 50px;

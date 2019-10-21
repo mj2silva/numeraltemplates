@@ -1,27 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-$font-1: "Montserrat",
-sans-serif;
-$cl-primary-1: #ED3237;
-$cl-primary-2: #6FE1DE;
-$cl-primary-3: #95ED32;
-$cl-primary-4: #B077F0;
-$cl-secondary-1: #92DCE5;
-$cl-negative: #E95656;
-$cl-positive: #65DF4D;
-$cl-white: #F8F8F8;
-$cl-black: #444444;
-$cl-gray-1: #646464;
-$cl-gray-2: #EEEEEE;
-@function getMainContainerHeight($headerHeight,
-$footerHeight) {
+@import "../foundations/fonts";
+@import "../foundations/colors";
+@import "../foundations/spacing";
+@function getMainContainerHeight($headerHeight, $footerHeight) {
     $occupedHeight: $headerHeight + $footerHeight;
     @return calc(100vh - #{$occupedHeight});
 }
 
 body {
-    font-family: $font-1;
-    margin: 0;
-    background-color: $cl-white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }

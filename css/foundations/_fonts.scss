@@ -1,0 +1,29 @@
+@import "../tokens/typo";
+@import "../tokens/spacing";
+@import "../tokens/colors";
+body {
+    font-family: $font-1;
+    margin: 0;
+    background-color: $cl-white;
+    color: $cl-black;
+}
+
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h1 h2 h3 {
+    margin: $space 0;
+}
+
+p a .normal-font-size {
+    font-size: $p;
+}

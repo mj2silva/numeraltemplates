@@ -1,0 +1,8 @@
+extend _login-container.pug
+block content
+    form.login-form(action="modules.html")
+        label(for="username") Usuario:
+        input.login-form__input(type="text" name="username")
+        label(for="password") Contraseña:
+        input.login-form__input(type="password" name="password")
+        a.login-form__button(href="../intranet/modules.html") Iniciar sesión

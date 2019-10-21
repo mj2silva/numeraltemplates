@@ -1,7 +1,7 @@
 @import "components/globals";
-@import "components/header-intranet";
-@import "components/select-module";
-@import "components/footer-logo";
+@import "components/intranet/header-intranet";
+@import "components/intranet/select-module";
+@import "components/intranet/footer-logo";
 // $sideBarWidth: 0px;
 // body {
 //     grid-template-columns: $sideBarWidth auto;
@@ -17,6 +17,8 @@ p {
 
 .side-bar {
     width: 40%;
+    width: 140px;
+    overflow: hidden;
     background-color: $cl-primary-1;
     height: 100vh;
     display: flex;
@@ -49,6 +51,7 @@ p {
     }
     &__profile-data p {
         margin: 4px 0;
+        display: none;
     }
     &__icon {
         font-size: 48px;
@@ -72,5 +75,6 @@ p {
     }
     &__option-name {
         font-size: 28px;
+        display: none;
     }
 }

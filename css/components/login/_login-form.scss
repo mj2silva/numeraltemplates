@@ -1,0 +1,39 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 40px 0;
+    width: 100%;
+    align-items: center;
+    &__input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: solid #444444 1px;
+        padding: 5px 10px;
+        margin: 15px 0;
+    }
+    &__input:focus {
+        outline-color: transparent;
+        border-color: #92DCE5;
+    }
+    &__button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px 0;
+        border-radius: 15px;
+        border: none;
+        background-color: #ED3237;
+        color: #F8F8F8;
+        font-size: 16px;
+        transition-duration: 500ms;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+    &__button:hover {
+        background: #ff7176;
+    }
+}

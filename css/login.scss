@@ -1,7 +1,11 @@
 @import "components/globals.scss";
-@import "components/login-header";
-@import "components/login";
-@import "components/login-footer";
+@import "components/login/login-header";
+@import "components/login/login-container";
+@import "components/login/login-form";
+@import "components/login/login-presentation";
+@import "components/login/login-footer";
 main {
     min-height: getMainContainerHeight($headerHeight, $footerHeight);
+    display: flex;
+    align-items: center;
 }

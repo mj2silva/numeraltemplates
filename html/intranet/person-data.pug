@@ -1,0 +1,35 @@
+extend ../components/intranet/_template.pug
+block side-bar
+  .side-bar
+    .side-bar__menu-button
+      i.fas.fa-bars
+    nav.side-bar__options
+      - for (var i = 0; i < selectModuleOptions.length; i++)
+        +sideOption(sideOptionsIcons[i], sideOptionsNames[i], sideOptionsNames[i])
+    .side-bar__footer
+      .side-bar__profile-picture
+        img(src="../images/icons/user-icon.png" alt="profile-icon")
+      .side-bar__profile-data
+        p Username
+        p Cargo en la compañía
+block header
+  include ../components/intranet/_intranet-header.pug
+block contents
+  .person-data
+    p.person-data__message Parece que el cliente no está registrado con nosotros
+    p.person-data__message Para poder continuar, por favor solicite al cliente los siguientes datos:
+    form.person-data__form(action="./")
+      label.person-data__label_1(for="names") Nombres
+        input(type="text" name="names")
+      label.person-data__label_2(for="firstLastName") Apellido paterno
+        input(type="text" name="firstLastName")
+      label.person-data__label_2(for="secondLastName") Apellido materno
+        input(type="text" name="secondLastName")
+      label.person-data__label_2(for="phoneNumber") Teléfono
+        input(type="phone" name="phoneNumber")
+      label.person-data__label_2(for="birthDate") Fecha de nacimiento
+        input(type="date" name="birthDate")
+      label(for="email") Email
+        input(type="email" name="email")
+      button.person-data__button(type="submit") Continuar
+block footer

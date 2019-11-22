@@ -1,0 +1,26 @@
+extend ../components/intranet/_template.pug
+block side-bar
+  .side-bar
+    .side-bar__menu-button
+      i.fas.fa-bars
+    nav.side-bar__options
+      - for (var i = 0; i < selectModuleOptions.length; i++)
+        +sideOption(sideOptionsIcons[i], sideOptionsNames[i], sideOptionsNames[i])
+    .side-bar__footer
+      .side-bar__profile-picture
+        img(src="../images/icons/user-icon.png" alt="profile-icon")
+      .side-bar__profile-data
+        p Username
+        p Cargo en la compañía
+block header
+  include ../components/intranet/_intranet-header.pug
+block contents
+  .document-form
+    h2.document-form__tittle ¿Con qué cliente trabajamos hoy?
+    form.document-form__form(action="./")
+      label(for="documentType") Tipo de documento
+        input(type="text" name="documentType")
+      label(for="documentNumber") Número de documento
+        input(type="text" name="documentType")
+      button.document-form__button(type="submit") Continuar
+block footer

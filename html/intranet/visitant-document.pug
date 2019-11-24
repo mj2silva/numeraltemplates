@@ -19,7 +19,10 @@ block contents
     h2.document-form__tittle ¿Con qué cliente trabajamos hoy?
     form.document-form__form(action="./")
       label(for="documentType") Tipo de documento
-        input(type="text" name="documentType")
+        select(name="documentType")
+          option(value="1") DNI
+          option(value="2") Carné de extranjería
+          option(value="3") RUC
       label(for="documentNumber") Número de documento
         input(type="text" name="documentType")
       button.document-form__button(type="submit") Continuar

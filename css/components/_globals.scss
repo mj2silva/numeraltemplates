@@ -5,8 +5,3 @@
     $occupedHeight: $headerHeight + $footerHeight;
     @return calc(100vh - #{$occupedHeight});
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-}

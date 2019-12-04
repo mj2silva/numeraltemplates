@@ -1,7 +1,6 @@
 @import "../foundations/fonts";
 @import "../foundations/colors";
 @import "../foundations/spacing";
-
 @function getMainContainerHeight($headerHeight, $footerHeight) {
     $occupedHeight: $headerHeight + $footerHeight;
     @return calc(100vh - #{$occupedHeight});

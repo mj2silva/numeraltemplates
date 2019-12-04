@@ -1,0 +1,10 @@
+$footerHeight: 70px;
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $footerHeight;
+    &__logo img {
+        width: 12em;
+    }
+}

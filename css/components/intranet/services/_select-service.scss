@@ -1,0 +1,31 @@
+.select-service {
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &__tittle {
+      margin: 100px 50px;
+  }
+  &__options {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+  }
+  &__option {
+      height: 150px;
+      padding: 15px;
+      border-radius: 50%;
+      background-color: $cl-primary-1;
+      color: $cl-white;
+      border: none;
+      width: 15%;
+      transition-duration: 500ms;
+      margin: 30px;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  &__option:hover {
+      background-color: $cl-secondary-1;
+  }
+}

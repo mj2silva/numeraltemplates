@@ -1,0 +1,17 @@
+.person-data
+    p.person-data__message Parece que el cliente no está registrado con nosotros
+    p.person-data__message Para poder continuar, por favor solicite al cliente los siguientes datos:
+    form.person-data__form(action="./")
+      label.person-data__label.label.label__large(for="names") Nombres
+        input(type="text" name="names")
+      label.person-data__label.label.label__mid(for="firstLastName") Apellido paterno
+        input(type="text" name="firstLastName")
+      label.person-data__label.label.label__mid(for="secondLastName") Apellido materno
+        input(type="text" name="secondLastName")
+      label.person-data__label.label.label__mid(for="phoneNumber") Teléfono
+        input(type="phone" name="phoneNumber")
+      label.person-data__label.label.label__mid(for="birthDate") Fecha de nacimiento
+        input(type="date" name="birthDate")
+      label.person-data__label.label.label__large(for="email") Email
+        input(type="email" name="email")
+      button.person-data__button.button.button__normal(type="submit") Continuar

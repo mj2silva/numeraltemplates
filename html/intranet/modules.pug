@@ -1,7 +1,11 @@
-extend ../components/intranet/_template.pug
-block header
+//- Excepcion al template, no se usa el side bar
+include ../components/intranet/_configuration.pug
+
+doctype html
+html(lang="es")
+	include ../components/intranet/_head.pug
+body
 	include ../components/intranet/_intranet-header.pug
-block contents
 	main
 		section.select-module
 			h1.select-module__tittle #{title}
@@ -9,7 +13,6 @@ block contents
 			.select-module__options
 				- for (var i = 0; i < selectModuleOptions.length; i++)
 					+selectModuleButton(optionIcons[i], selectModuleOptions[i], selectModuleOptions[i], optionLinks[i])
-block footer
 	footer.footer-logo
 		.footer-logo__logo
 			img(src="../../images/NUMERAL1.png" alt="Numeral logo 1")

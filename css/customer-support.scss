@@ -1,239 +1,67 @@
-@import "components/globals";
-@import "components/intranet/header-intranet";
-@import "components/intranet/select-module";
-@import "components/intranet/footer-logo";
+@import "./components/globals";
+@import "./components/intranet/header-intranet";
+@import "./components/intranet/select-module";
+@import "./components/intranet/footer-logo";
+@import "./components/_side-bar.scss";
+@import "./components/intranet/services/_person-data.scss";
+@import "./components/intranet/services/_document-form.scss";
+@import "./components/intranet/services/_select-service.scss";
+@import "./components/intranet/services/cycle/_cycle-list.scss";
+@import "./components/intranet/services/advisory/_select-advisory.scss";
 // $sideBarWidth: 0px;
 // body {
 //     grid-template-columns: $sideBarWidth auto;
 // }
-body {
-    color: $cl-black;
-    margin: 0;
-    padding: 0;
-  }
 
 .container {
     float: right;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: calc(100% - 140px);
     min-height: getMainContainerHeight($headerHeight, $footerHeight);
 }
 
-p {
-    margin: 0;
-}
-
-
-.side-bar {
+.cycle-schedule {
+    border-radius: 15px;
     position: fixed;
-    width: 140px;
-    overflow: hidden;
-    background-color: $cl-primary-1;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    &__menu-button {
-        font-size: 48px;
-        color: white;
-        margin: 24px 48px 0 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    &__footer {
-        display: flex;
-        font-size: 12px;
-        color: white;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    &__profile-picture {
-        width: 140px;
-        text-align: center;
-    }
-    &__profile-data {
-        display: flex;
-        flex-direction: column;
-        height: 50px;
-        justify-content: center;
-    }
-    &__profile-data p {
-        margin: 4px 0;
-        display: none;
-    }
-    &__icon {
-        font-size: 48px;
-        color: white;
-    }
-    &__option {
-        display: flex;
-        margin-bottom: 24px;
-        align-items: center;
-        color: white;
-    }
-    &__option:hover,
-    &__option:hover &__icon,
-    &__menu-button:hover {
-        color: $cl-secondary-1;
-        cursor: pointer;
-    }
-    &__option i {
-        width: 140px;
-        text-align: center;
-    }
-    &__option-name {
-        font-size: 28px;
-        display: none;
-    }
-}
-
-.document-form {
-    height: calc(100vh - 30px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &__tittle {
-        margin: 100px 50px;
-    }
-    &__form {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-self: center;
-    }
-    &__form label {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    &__form input,
-    &__form select {
-        color: $cl-black;
-        width: 100%;
-        height: 25px;
-        padding: 0 5px;
-        margin: 20px 0;
-        box-sizing: border-box;
-        lighting-color: aqua;
-    }
-    
-    &__form option:hover::before {
-        background-color: $cl-secondary-1;
+    top: 10%;
+    left: 15%;
+    background-color: $cl-gray-2;
+    padding: 50px;
+    &__schedule {
+        background-color: $cl-white;
     }
     &__button {
-        width: 30%;
-        align-self: flex-end;
-        padding: 10px;
-        background-color: $cl-primary-1;
-        border: none;
-        color: $cl-white;
-        font-size: 16px;
-        cursor: pointer;
-        transition-duration: 500ms;
-    }
-    &__button:hover {
-        background-color: $cl-secondary-1;
+        float: right;
+        margin-top: 30px;
+        min-width: 50px;
+        width: 15%;
     }
 }
 
-.person-data {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &__message {
-        margin: 10px 50px;
+.schedule {
+    width: 100%;
+    border-spacing: 15px;
+    & th,
+    & td {
+        min-width: 100px;
+        border: solid 1px $cl-black;
+        border-radius: 10px;
+        padding: 2px;
+        text-align: center;
     }
-    &__form {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-self: center;
+    &__item {
+        cursor: not-allowed;
+        &__ocupped {
+            background-color: $cl-secondary-1;
+            color: $cl-gray-1;
+            cursor: pointer;
+            transition-duration: 500ms;
+        }
+        &__ocupped:hover {
+            background-color: $cl-primary-3;
+        }
     }
-    &__form label {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    &__form input {
-        color: $cl-black;
-        width: 100%;
-        height: 25px;
-        padding: 0 5px;
-        margin: 20px 0;
-        box-sizing: border-box;
-    }
-    &__button {
-        width: 30%;
-        align-self: flex-end;
-        padding: 10px;
-        background-color: $cl-primary-1;
-        border: none;
-        color: $cl-white;
-        font-size: 16px;
-        cursor: pointer;
-        transition-duration: 500ms;
-    }
-    &__button:hover {
-        background-color: $cl-secondary-1;
-    }
-}
 
-.select-service {
-    height: calc(100vh - 30px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    &__tittle {
-        margin: 100px 50px;
-    }
-    &__options {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-content: center;
-    }
-    &__option {
-        height: 150px;
-        background-color: $cl-primary-1;
-        color: $cl-white;
-        border: none;
-        width: 12%;
-        transition-duration: 500ms;
-        margin: 30px;
-        font-size: 24px;
-        cursor: pointer;
-    }
-    &__option:hover {
-        background-color: $cl-secondary-1;
-    }
-}
-
-.cycles-list {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px 50px;
-    }
-    &__cycle {
-        border: solid $cl-black 1px;
-        margin: 30px;
-    }
-    &__data {
-        width: 100%;
-    }
-    &__data th{
-        padding: 10px;
-        text-align: end;
-    }
-    &__data td{
-        padding: 10px;
-        text-align: end;
-    }
 }

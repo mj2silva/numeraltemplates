@@ -1,21 +1,4 @@
-extend ../components/intranet/_template.pug
-block side-bar
-  .side-bar
-    .side-bar__menu-button
-      i.fas.fa-bars
-    nav.side-bar__options
-      - for (var i = 0; i < selectModuleOptions.length; i++)
-        +sideOption(sideOptionsIcons[i], sideOptionsNames[i], sideOptionsNames[i])
-    .side-bar__footer
-      .side-bar__profile-picture
-        img(src="../images/icons/user-icon.png" alt="profile-icon")
-      .side-bar__profile-data
-        p Username
-        p Cargo en la compañía
-block header
-  include ../components/intranet/_intranet-header.pug
-block contents
-  .cycles-list
+.cycles-list
     .cycles-list__header
       p.cycles-list__message Actualmente, tenemos los siguientes ciclos disponibles
       a.cycles-list__filterBy Filtrar
@@ -83,5 +66,3 @@ block contents
           td Ciencias
         tr
           td(colspan='5') Desde S/ 79.90
-
-block footer

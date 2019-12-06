@@ -4,6 +4,7 @@
 @import "components/login/login-form";
 @import "components/login/login-presentation";
 @import "components/login/login-footer";
+
 main {
     min-height: getMainContainerHeight($headerHeight, $footerHeight);
     display: flex;

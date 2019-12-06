@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/modules.css">
-    <link rel="stylesheet" href="../../css/customer-support.css">
+    <link rel="stylesheet" href="../../../css/modules.css">
+    <link rel="stylesheet" href="../../../css/customer-support.css">
     <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
     <title>Elegir módulo</title>
   </head>
@@ -36,29 +36,19 @@
       <div class="header-intranet__menu"><a class="header-intranet__option" href="index.html">Faqs</a><a class="header-intranet__option" href="index.html">Reportar un problema</a><a class="header-intranet__option" href="index.html">Cerrar sesión</a>
       </div>
     </header>
-    <div class="person-data">
-      <p class="person-data__message">Parece que el cliente no está registrado con nosotros</p>
-      <p class="person-data__message">Para poder continuar, por favor solicite al cliente los siguientes datos:</p>
-      <form class="person-data__form" action="./">
-        <label class="person-data__label label label__large" for="names">Nombres
-          <input type="text" name="names">
+    <div class="document-form">
+      <h2 class="document-form__tittle">¿Con qué cliente trabajamos hoy?</h2>
+      <form class="document-form__form" action="./">
+        <label class="document-form__label label label__mid" for="documentType">Tipo de documento
+          <select name="documentType">
+            <option value="1">DNI</option>
+            <option value="2">Carné de extranjería</option>
+          </select>
         </label>
-        <label class="person-data__label label label__mid" for="firstLastName">Apellido paterno
-          <input type="text" name="firstLastName">
+        <label class="document-form__label label label__mid" for="documentNumber">Número de documento
+          <input type="text" name="documentType">
         </label>
-        <label class="person-data__label label label__mid" for="secondLastName">Apellido materno
-          <input type="text" name="secondLastName">
-        </label>
-        <label class="person-data__label label label__mid" for="phoneNumber">Teléfono
-          <input type="phone" name="phoneNumber">
-        </label>
-        <label class="person-data__label label label__mid" for="birthDate">Fecha de nacimiento
-          <input type="date" name="birthDate">
-        </label>
-        <label class="person-data__label label label__large" for="email">Email
-          <input type="email" name="email">
-        </label>
-        <button class="person-data__button button button__normal" type="submit">Continuar</button>
+        <button class="document-form__button button button__normal" type="submit">Continuar</button>
       </form>
     </div>
   </div>

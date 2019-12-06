@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/modules.css">
-    <link rel="stylesheet" href="../../css/customer-support.css">
+    <link rel="stylesheet" href="../../../css/modules.css">
+    <link rel="stylesheet" href="../../../css/customer-support.css">
     <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
     <title>Elegir módulo</title>
   </head>
@@ -36,21 +36,12 @@
       <div class="header-intranet__menu"><a class="header-intranet__option" href="index.html">Faqs</a><a class="header-intranet__option" href="index.html">Reportar un problema</a><a class="header-intranet__option" href="index.html">Cerrar sesión</a>
       </div>
     </header>
-    <div class="document-form">
-      <h2 class="document-form__tittle">¿Con qué cliente trabajamos hoy?</h2>
-      <form class="document-form__form" action="./">
-        <label for="documentType">Tipo de documento
-          <select name="documentType">
-            <option value="1">DNI</option>
-            <option value="2">Carné de extranjería</option>
-            <option value="3">RUC</option>
-          </select>
-        </label>
-        <label for="documentNumber">Número de documento
-          <input type="text" name="documentType">
-        </label>
-        <button class="document-form__button" type="submit">Continuar</button>
-      </form>
+    <div class="select-service">
+      <h2 class="select-service__tittle">Seleccione un servicio para comenzar</h2>
+      <div class="select-service__options">
+        <button class="select-service__option">Ciclos</button>
+        <button class="select-service__option">Asesorías</button>
+      </div>
     </div>
   </div>
 </body>

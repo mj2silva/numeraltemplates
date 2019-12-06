@@ -1,6 +1,7 @@
 @import "../foundations/fonts";
 @import "../foundations/colors";
 @import "../foundations/spacing";
+@import "./common/_common.scss";
 
 @function getMainContainerHeight($headerHeight, $footerHeight) {
     $occupedHeight: $headerHeight + $footerHeight;

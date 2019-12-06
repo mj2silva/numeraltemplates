@@ -1,0 +1,28 @@
+.document-form {
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__tittle {
+      margin: 100px 50px;
+  }
+  &__form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 50%;
+      align-self: center;
+  }
+  &__form label {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+  }
+  
+  &__form option:hover::before {
+      background-color: $cl-secondary-1;
+  }
+  &__button {
+      align-self: flex-end;
+  }
+}

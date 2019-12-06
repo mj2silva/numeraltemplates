@@ -1,0 +1,25 @@
+.cycles-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__header {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 50px;
+  }
+  &__cycle {
+      border: solid $cl-black 1px;
+      margin: 30px;
+  }
+  &__data {
+      width: 100%;
+  }
+  &__data th{
+      padding: 10px;
+      text-align: end;
+  }
+  &__data td{
+      padding: 10px;
+      text-align: end;
+  }
+}

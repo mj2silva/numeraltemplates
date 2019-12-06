@@ -1,0 +1,55 @@
+extends ../customer-support.pug
+block contents
+  .cycle-detail
+    h2 Estas son las características del ciclo seleccionado
+    .cycle-detail__data
+      table.cycle-detail__block
+        tr
+          th Fecha de inicio:
+        tr
+          td 25/05/2020
+      table.cycle-detail__block
+        tr
+          th Fecha de cierre
+        tr
+          td 25/06/2020
+      table.cycle-detail__block
+        tr
+          th Lista de asignaturas:
+        tr
+          td Geometría
+        tr
+          td Trigonometría
+        tr
+          td Álgebra
+      table.cycle-detail__block
+        tr
+          th Vacantes disponibles
+        tr
+          td 4
+      table.cycle-detail__block
+        tr
+          th Sede
+        tr
+          td San Isidro
+      table.cycle-detail__block
+        tr
+          th Horas de clase totales
+        tr
+          td 30
+      table.cycle-detail__block
+        tr
+          th Turno
+        tr
+          td Tarde
+      table.cycle-detail__block
+        tr
+          th Precio
+        tr
+          td S/ 79.90
+    .cycle-detail__actions
+      a.link.link__normal.cycle-detail__link(href=".") Ver lista de estudiantes matriculados
+      .cycle-detail__buttons
+        button.cycle-detail__button.button.button__normal(type="button") Ver horario
+        button.cycle-detail__button.button.button__white(type="button") Seleccionar ciclo
+block footer

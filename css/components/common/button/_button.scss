@@ -1,16 +1,29 @@
 .button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition-duration: 500ms;
+  &:enabled {
+    outline: none;
+  }
   &__normal {
       min-width: 96px;
       width: 30%;
-      padding: 10px;
       background-color: $cl-primary-1;
-      border: none;
       color: $cl-white;
-      font-size: 16px;
-      cursor: pointer;
-      transition-duration: 500ms;
   }
   &__normal:hover {
       background-color: $cl-secondary-1;
   }
+  &__white {
+    color: $cl-primary-1;
+    background-color: $cl-white;
+    border: 1px solid $cl-primary-1;
+  }
+  &__white:hover {
+    background-color: $cl-primary-3;
+    color: $cl-gray-1;
+    border-color: $cl-gray-1;
+}
 }

@@ -1,0 +1,32 @@
+.results-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__tittle {
+    margin: 50px 0 30px 30px;
+  }
+  &__header {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 30px;
+  }
+  &__cycle {
+      border: solid $cl-black 1px;
+      margin: 30px;
+  }
+  &__data {
+      width: 100%;
+  }
+  &__data th{
+      padding: 10px;
+      text-align: end;
+  }
+  &__data td{
+      padding: 10px;
+      text-align: end;
+  }
+  &__select-button {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

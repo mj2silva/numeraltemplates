@@ -1,0 +1,38 @@
+extend ../../components/intranet/_template.pug
+block side-bar
+  include ../../components/intranet/_side-bar.pug
+block header
+  include ../../components/intranet/_intranet-header.pug
+block contents
+  .personal-advisory.form
+    h2.personal-advisory__tittle.form__tittle Nueva asesoría
+    p.personal-advisory__message.form__message Por favor, complete los campos para realizar la búsqueda de asesores
+    form.personal-advisory__form.form__form(action="./")
+      label.personal-advisory__label.form__label.label.label__mid(for="specialtie") Especialidad
+        select(name="specialtie")
+          option Matemática
+          option Comunicación
+          option Física
+      label.personal-advisory__label.form__label.label.label__mid(for="topic") Tema
+        select(name="topic")
+          option Conjuntos
+          option Operaciones con conjuntos
+          option etc
+      label.personal-advisory__label.form__label.label.label__mid(for="program") Programa
+        select(name="program")
+          option Inicial
+          option Primaria
+          option Secundaria
+          option Superior
+      label.personal-advisory__label.form__label.label.label__mid(for="media") Medio
+        select(name="media")
+          option Virtual (Skype)
+          option Presencial
+      label.personal-advisory__label.form__label.label.label__mid(for="date") Fecha
+        input(type="date" name="date")
+      label.personal-advisory__label.form__label.label.label__mid(for="context") Contexto 
+        select(name="context")
+          option Colegio 1
+          option Colegio 2
+      button.personal-advisory__button.form__button.button.button__normal(type="submit") Continuar
+block footer

@@ -68,6 +68,53 @@ h1 h2 h3 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
+.form {
+  min-height: calc(100vh - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .form__tittle {
+    margin: 50px 50px; }
+  .form__message {
+    margin: 0px 50px; }
+  .form__form {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 50%;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .form__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .form__form option:hover::before {
+    background-color: #92DCE5; }
+  .form__button {
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  .form__instruction {
+    color: #646464;
+    font-size: 12px;
+    display: inline; }
+
 .header-intranet {
   width: 100%;
   background-color: #646464; }
@@ -282,7 +329,7 @@ h1 h2 h3 {
     align-self: center; }
 
 .document-form {
-  height: calc(100vh - 30px);
+  min-height: calc(100vh - 30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,13 +343,10 @@ h1 h2 h3 {
   .document-form__tittle {
     margin: 100px 50px; }
   .document-form__form {
+    margin: 36px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 50%;

@@ -4,14 +4,14 @@
   flex-direction: column;
   justify-content: center;
   &__message {
-      margin: 10px 50px;
+    margin: 10px 50px;
   }
   &__form {
-      margin: $space-big-mid 0;
-      display: flex;
-      flex-wrap: wrap;
-      width: 50%;
-      align-self: center;
+    margin: $space-big-mid 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-self: center;
   }
   &__tittle {
     margin: 10px 50px;

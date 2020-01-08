@@ -1,8 +1,6 @@
 extends ../customer-support.pug
 block contents
-  .instructor-schedule
-    h2 Nueva asesoría - horario
-    p Seleccione las horas en las que se realizará la asesoría
+  .cycle-schedule
     table.schedule.cycle-schedule__schedule
       tr
         th Hora
@@ -78,20 +76,20 @@ block contents
         td.schedule__item
       tr
         td.schedule__time 15 - 16
-        td.schedule__item__ocupped Disp.
+        td.schedule__item__ocupped Álg.
         td.schedule__item
-        td.schedule__item__ocupped Disp.
+        td.schedule__item__ocupped Trig.
         td.schedule__item
-        td.schedule__item__ocupped Disp.
+        td.schedule__item__ocupped Geom.
         td.schedule__item
         td.schedule__item
       tr
         td.schedule__time 17 - 18
-        td.schedule__item__ocupped Disp.
+        td.schedule__item__ocupped Álg.
         td.schedule__item
-        td.schedule__item__ocupped Disp.
+        td.schedule__item__ocupped Trig.
         td.schedule__item
-        td.schedule__item__ocupped Disp.
+        td.schedule__item__ocupped Geom.
         td.schedule__item
         td.schedule__item
       tr
@@ -112,5 +110,5 @@ block contents
         td.schedule__item
         td.schedule__item
         td.schedule__item
-    button.cycle-schedule__button.button.button__normal(type="button") Continuar
+    button.cycle-schedule__button.button.button__normal(type="button") Cerrar
 block footer

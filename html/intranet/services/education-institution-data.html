@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/modules.css">
+    <link rel="stylesheet" href="../../../css/customer-support.css">
+    <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
+    <title>Elegir módulo</title>
+  </head>
+</html>
+<body>
+  <div class="side-bar">
+    <div class="side-bar__menu-button"><i class="fas fa-bars"></i></div>
+    <nav class="side-bar__options">
+      <div class="side-bar__option"><i class="side-bar__icon fas fa-home"></i>
+        <p class="side-bar__option-name">Inicio</p>
+      </div>
+      <div class="side-bar__option"><i class="side-bar__icon fas fa-shapes"></i>
+        <p class="side-bar__option-name">Servicios</p>
+      </div>
+      <div class="side-bar__option"><i class="side-bar__icon fas fa-user-graduate"></i>
+        <p class="side-bar__option-name">Estudiantes</p>
+      </div>
+    </nav>
+    <div class="side-bar__footer">
+      <div class="side-bar__profile-picture"><img src="../images/icons/user-icon.png" alt="profile-icon"></div>
+      <div class="side-bar__profile-data">
+        <p>Username</p>
+        <p>Cargo en la compañía</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <header class="header-intranet">
+      <div class="header-intranet__menu"><a class="header-intranet__option" href="index.html">Faqs</a><a class="header-intranet__option" href="index.html">Reportar un problema</a><a class="header-intranet__option" href="index.html">Cerrar sesión</a>
+      </div>
+    </header>
+    <div class="personal-advisory form">
+      <h2 class="personal-advisory__tittle form__tittle">Estudiante - Institución educativa</h2>
+      <p class="personal-advisory__message form__message">Seleccione el colegio y el nivel</p>
+      <form class="personal-advisory__form form__form" action="./">
+        <label class="personal-advisory__label form__label label label__mid" for="department">Departamento
+          <select name="department">
+            <option>La libertad</option>
+            <option>Lima</option>
+            <option>Cajamarca</option>
+          </select>
+        </label>
+        <label class="personal-advisory__label form__label label label__mid" for="province">Provincia
+          <select name="province">
+            <option>Trujillo</option>
+            <option>Virú</option>
+            <option>Ascope</option>
+          </select>
+        </label>
+        <label class="personal-advisory__label form__label label label__mid" for="district">Distrito
+          <select name="program">
+            <option>Trujillo</option>
+            <option>Victor Larco Herrera</option>
+            <option>El porvenir</option>
+            <option>La esperanza</option>
+          </select>
+        </label>
+        <label class="personal-advisory__label form__label label label__mid" for="media">Nivel
+          <select name="media">
+            <option>Inicial - 3 años</option>
+            <option>Inicial - 4 años</option>
+            <option>Inicial - 5 años</option>
+            <option>1° de primaria</option>
+            <option>2° de primaria</option>
+            <option>3° de primaria</option>
+            <option>4° de primaria</option>
+            <option>5° de primaria</option>
+            <option>6° de primaria</option>
+            <option>1° de secundaria</option>
+            <option>2° de secundaria</option>
+            <option>3° de secundaria</option>
+            <option>4° de secundaria</option>
+            <option>5° de secundaria</option>
+            <option>Pre-universitario</option>
+            <option>Técnico/Universitario</option>
+          </select>
+        </label>
+        <label class="personal-advisory__label form__label label label__large" for="date">Institución educativa
+          <select name="media">
+            <option>I.E. Mariano Santos</option>
+            <option>I.E. Lord Kelvin</option>
+          </select>
+          <div class="form__extra-option">Nuevo colegio</div>
+        </label>
+        <button class="personal-advisory__button form__button button button__normal" type="submit">Continuar</button>
+      </form>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,51 @@
+extend ../../components/intranet/_template.pug
+block side-bar
+  include ../../components/intranet/_side-bar.pug
+block header
+  include ../../components/intranet/_intranet-header.pug
+block contents
+  .personal-advisory.form
+    h2.personal-advisory__tittle.form__tittle Estudiante - Institución educativa
+    p.personal-advisory__message.form__message Seleccione el colegio y el nivel
+    form.personal-advisory__form.form__form(action="./")
+      label.personal-advisory__label.form__label.label.label__mid(for="department") Departamento
+        select(name="department")
+          option La libertad
+          option Lima
+          option Cajamarca
+      label.personal-advisory__label.form__label.label.label__mid(for="province") Provincia
+        select(name="province")
+          option Trujillo
+          option Virú
+          option Ascope
+      label.personal-advisory__label.form__label.label.label__mid(for="district") Distrito
+        select(name="program")
+          option Trujillo
+          option Victor Larco Herrera
+          option El porvenir
+          option La esperanza
+      label.personal-advisory__label.form__label.label.label__mid(for="media") Nivel
+        select(name="media")
+          option Inicial - 3 años
+          option Inicial - 4 años
+          option Inicial - 5 años
+          option 1° de primaria
+          option 2° de primaria
+          option 3° de primaria
+          option 4° de primaria
+          option 5° de primaria
+          option 6° de primaria
+          option 1° de secundaria
+          option 2° de secundaria
+          option 3° de secundaria
+          option 4° de secundaria
+          option 5° de secundaria
+          option Pre-universitario
+          option Técnico/Universitario
+      label.personal-advisory__label.form__label.label.label__large(for="date") Institución educativa
+        select(name="media")
+          option I.E. Mariano Santos
+          option I.E. Lord Kelvin
+        div.form__extra-option Nuevo colegio
+      button.personal-advisory__button.form__button.button.button__normal(type="submit") Continuar
+block footer

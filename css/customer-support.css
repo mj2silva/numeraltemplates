@@ -113,6 +113,15 @@ h1 h2 h3 {
   .form__instruction {
     color: #646464;
     font-size: 12px; }
+  .form__extra-option {
+    margin: 0;
+    font-size: 12px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: bold; }
+  .form__extra-option:hover {
+    color: #92DCE5; }
 
 .results-list {
   display: -webkit-box;
@@ -360,6 +369,8 @@ h1 h2 h3 {
     width: 50%;
     -ms-flex-item-align: center;
     align-self: center; }
+  .person-data__tittle {
+    margin: 10px 50px; }
 
 .document-form {
   min-height: calc(100vh - 30px);
@@ -607,3 +618,7 @@ h1 h2 h3 {
 
 .hidden {
   display: none; }
+
+.instructor-schedule {
+  width: 90%;
+  margin: 0 auto; }

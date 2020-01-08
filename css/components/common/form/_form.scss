@@ -25,10 +25,20 @@
     background-color: $cl-secondary-1;
   }
   &__button {
-      align-self: flex-end;
+    align-self: flex-end;
   }
   &__instruction {
     color: $cl-gray-1;
     font-size: $extra-small;
+  }
+  &__extra-option {
+    margin: 0;
+    font-size: $extra-small;
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  &__extra-option:hover {
+    color: $cl-secondary-1;
   }
 }

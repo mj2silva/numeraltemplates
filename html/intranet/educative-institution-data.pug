@@ -1,0 +1,40 @@
+extend ../components/intranet/_template.pug
+block side-bar
+  include ../components/intranet/_side-bar.pug
+block header
+  include ../components/intranet/_intranet-header.pug
+block contents
+  .personal-advisory.form
+    h2.personal-advisory__tittle.form__tittle Estudiante - Institución educativa
+    p.personal-advisory__message.form__message Seleccione el colegio y el nivel
+    form.personal-advisory__form.form__form(action="./")
+      label.personal-advisory__label.form__label.label.label__mid(for="department") Departamento
+        select(name="department")
+          option La libertad
+          option Lima
+          option Cajamarca
+      label.personal-advisory__label.form__label.label.label__mid(for="province") Provincia
+        select(name="province")
+          option Trujillo
+          option Virú
+          option Ascope
+      label.personal-advisory__label.form__label.label.label__mid(for="district") Distrito
+        select(name="program")
+          option Trujillo
+          option Victor Larco Herrera
+          option El porvenir
+          option La esperanza
+      span Nivel
+      label.personal-advisory__label.form__label.label.label__mid(for="level") Inicial - 3 años
+        input(type="checkbox" name="level" value="1")
+      label.personal-advisory__label.form__label.label.label__mid(for="level") Inicial - 4 años
+        input(type="checkbox" name="level" value="1") 
+      label.personal-advisory__label.form__label.label.label__mid(for="level") Inicial - 5 años
+        input(type="checkbox" name="level" value="1") 
+      label.personal-advisory__label.form__label.label.label__mid(for="level") 1° de primaria
+        input(type="checkbox" name="level" value="1") 
+
+      label.personal-advisory__label.form__label.label.label__large(for="name") Nombre de la institución educativa
+        input(type="text" name="name")
+      button.personal-advisory__button.form__button.button.button__normal(type="submit") Continuar
+block footer
